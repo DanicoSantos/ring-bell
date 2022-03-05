@@ -7,9 +7,7 @@ document.body.onload = function () {
         const buttonsElements = actionButton.querySelectorAll('span');
         const iconElement = buttonsElements[1].querySelector('i');
 
-        // actionButton.removeEventListener('click', function(){});
-
-        actionButton.classList.remove('is-primary');
+        actionButton.classList.remove('is-info');
         actionButton.classList.add('is-danger');
         actionButton.classList.remove('play');
         actionButton.classList.add('stop');
@@ -22,12 +20,10 @@ document.body.onload = function () {
         audio.pause();
         audio.load();
         const buttonsElements = actionButton.querySelectorAll('span');
-        const iconElement = buttonsElements[1].querySelector('i');
-
-        // actionButton.removeEventListener('click', function(){});
+        const iconElement = buttonsElements[1].querySelector('i');        
 
         actionButton.classList.remove('is-danger');
-        actionButton.classList.add('is-primary');        
+        actionButton.classList.add('is-info');        
         actionButton.classList.remove('stop');
         actionButton.classList.add('play');        
         buttonsElements[0].innerHTML = 'Tocar';
