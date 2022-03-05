@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DanicoSantos/ring-bell/issues"
   },
-  "homepage": "https://github.com/DanicoSantos/ring-bell#readme"
+  "homepage": "https://github.com/DanicoSantos/ring-bell#readme",
+  "dependencies": {
+    "mongodb": "^4.4.1"
+  }
 }
