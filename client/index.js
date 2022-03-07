@@ -1,6 +1,7 @@
 document.body.onload = function () {
     const actionButton = document.querySelector('#actionButton');
     const audio = document.querySelector('#audio');
+    const bell = document.querySelector('#bell');
 
     const ringBell = function () {
         audio.play();        
@@ -14,6 +15,7 @@ document.body.onload = function () {
         buttonsElements[0].innerHTML = 'Parar';
         iconElement.classList.remove('fa-bell');
         iconElement.classList.add('fa-pause');
+        bell.classList.add('svg-bell');
     }
 
     const stopBell = function() {
@@ -29,6 +31,7 @@ document.body.onload = function () {
         buttonsElements[0].innerHTML = 'Tocar';
         iconElement.classList.remove('fa-pause');
         iconElement.classList.add('fa-bell');
+        bell.classList.remove('svg-bell');
         
     }
 
